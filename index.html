@@ -8,7 +8,7 @@
 <body>
 <div class="container">
     <div class="content">
-        <h1> Ice Cream Shoppe</h1>
+        <h1> Pizzeria</h1>
         <form>
             <fieldset>
                 <legend>Customer:</legend>
@@ -21,22 +21,30 @@
                         <label for="lastname">Last</label>
                         <input id="lastname" name="last_name" type="text">
                     </div>
+                    <div>
+                        <label for="addy">Address</label>
+                        <input id="addy" name="addy" type="text">
+                    </div>
+                    <div>
+                        <label for="number">Phone Number</label>
+                        <input id="number" name="number" type="text">
+                    </div>
                 </div>
             </fieldset>
             <div class="row">
                 <fieldset>
-                    <legend>Flavor:</legend>
+                    <legend>Sauce:</legend>
                     <div>
-                        <input type="radio" id="vanilla" name="icecream">
-                        <label for="vanilla">Vanilla</label>
+                        <input type="radio" id="red" name="sauce">
+                        <label for="red">Red Sauce</label>
                     </div>
                     <div>
-                        <input type="radio" id="strawberry" name="icecream">
-                        <label for="strawberry">Strawberry</label>
+                        <input type="radio" id="white" name="sauce">
+                        <label for="white">White Sauce</label>
                     </div>
                     <div>
-                        <input type="radio" id="chocolate" name="icecream">
-                        <label for="chocolate">Chocolate</label>
+                        <input type="radio" id="pesto" name="sauce">
+                        <label for="pesto">Pesto</label>
                     </div>
                 </fieldset>
             </div>
@@ -55,22 +63,62 @@
                         <input type="radio" id="large" name="size">
                         <label for="large">Large</label>
                     </div>
+                    <div>
+                        <input type="radio" id="xlarge" name="size">
+                        <label for="xlarge">X-Large</label>
+                    </div>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Toppings:</legend>
                 <div>
                     <div>
-                        <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">
-                        <label for="sprinkles">Sprinkles</label>
+                        <input type="checkbox" id="cheese" name="cheese" value="cheese">
+                        <label for="cheese">Cheese</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="cream" name="cream" value="cream">
-                        <label for="cream">Whipped Cream</label>
+                        <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="caramel" name="caramel" value="caramel">
-                        <label for="caramel">Caramel Sauce</label>
+                        <input type="checkbox" id="bacon" name="bacon" value="bacon">
+                        <label for="bacon">Bacon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="chicken" name="chicken" value="chicken">
+                        <label for="chicken">Chicken</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                        <label for="sausage">Sausage</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                        <label for="mushrooms">Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Pineapple" name="Pineapple" value="Pineapple">
+                        <label for="Pineapple">Pineapple</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="olives" name="olives" value="olives">
+                        <label for="olives">Olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="tomatoes" name="tomatoes" value="tomatoes">
+                        <label for="tomatoes">Tomatoes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="onion" name="onion" value="onion">
+                        <label for="onion">Onion</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="spinach" name="spinach" value="spinach">
+                        <label for="spinach">Spinach</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="peppers" name="peppers" value="peppers">
+                        <label for="peppers">Peppers</label>
                     </div>
             </fieldset>
             <div>
@@ -85,14 +133,26 @@
                     </select>
                 </fieldset>
             </div>
-            <div>
-                <fieldset>
-                    <legend>Special Requests:</legend>
-                    <label for="specialrequests"> Special Requests:</label>
-                    <textarea id="specialrequests" name="specialrequests" rows="4" cols="10"
-                              placeholder="Allergic to peanuts, substitutions, etc."></textarea>
-                </fieldset>
-            </div>
+            <fieldset>
+                <legend>Sides:</legend>
+                <div>
+                    <div>
+                        <input type="checkbox" id="wing" name="wing" value="wing">
+                        <label for="wing">6-pc Buffalo Wing</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="bread" name="bread" value="bread">
+                        <label for="bread">Garlic Bread</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="salad" name="salad" value="salad">
+                        <label for="salad">Ceasar Salad</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cheese" name="cheese" value="cheese">
+                        <label for="cheese">Cheese Sticks</label>
+                    </div>
+            </fieldset>
             <button type="button" onClick="alert('Free today for our grand opening!')">Calcualte Cost</button>
             <button type="submit">Submit Order</button>
         </form>
